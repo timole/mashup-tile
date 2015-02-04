@@ -14,6 +14,7 @@ console.log('Server running in port ' + port);
 
 var booksUrl = 'http://metadata.helmet-kirjasto.fi/search/author.json?query=Campbell';
 
+console.log("Get list of books..");
 http.get(booksUrl, function(res) {
 
     var body = "";
